@@ -7,91 +7,96 @@
   </head>
 
   <body>
-    <form>
-     <h1>CALCULATOR</h1>
-    <table>
-        <div>
-        <tr>
+      <h1>CALCULATOR</h1>
+      <div id="container">
+      
+    <form name="form" >
+     
+
+        
            
-                <input type="text" name="display">
+                <input type="text" name="textview" class="textview" readonly="readonly">
             
-        </tr>
+       
+        <table name="table"id="calcuator" >
         <tr>
                 <td>
-                    <button  class="clear">AC </button>
+                    <input type="button" class="clear"  value="AC" onclick="clearAll()">
+                    
                 </td>
                 <td>
-                        <button  class="clear">CE</button>
+                    <input type="button"  class="clear"  value="CE" onclick="back()">
                 </td> 
                 <td>
-                        <button class="clear" >%</button>
+                    <input type="button"  class="clear"  value="." onclick="insert(value)">
                 </td>   
                 <td>
-                        <button  class="operators">/</button>
+                    <input type="button"  class="operators"  value="/" onclick="insert(value)">
                 </td>                       
         </tr>
         <tr>
                 <td>
-                        <button  >7</button>
+                    <input type="button"  class="button"  value="7" onclick="insert(value)">
                 </td>             
                 <td>
-                    <button  >8</button>
+                    <input type="button"  class="button"  value="8" onclick="insert(value)">
                 </td>
                 <td>
-                        <button >9</button>
+                    <input type="button"  class="button"  value="9" onclick="insert(value)">
                 </td> 
                 <td>
-                        <button class="operators" >x</button>
+                    <input type="button"  class="operators"  value="*" onclick="insert(value)">
                 </td>          
         </tr>
    
         <tr>
                 <td>
-                        <button  >4</button>
+                    <input type="button"  class="button"  value="4" onclick="insert(value)">
                 </td>            
                 <td>
-                    <button  >5</button>
+                    <input type="button"  class="button"  value="5" onclick="insert(value)">
                 </td>
                 <td>
-                        <button >6</button>
+                    <input type="button"  class="button"  value="6" onclick="insert(value)">
                 </td> 
                 <td>
-                        <button class="operators" >-</button>
+                        <input type="button"  class="operators"  value="-" onclick="insert(value)">
                 </td>          
         </tr>
         <tr>
                 <td>
-                        <button  >1</button>
+                        <input type="button"  class="button"  value="1" onclick="insert(value)">
                 </td>            
                 <td>
-                    <button >2</button>
+                        <input type="button"  class="button"  value="2" onclick="insert(value)">
                 </td>
                 <td>
-                        <button  >3</button>
+                        <input type="button"  class="button"  value="3" onclick="insert(value)">
                 </td> 
                 <td>
-                        <button class="operators">+</button>
+                        <input type="button"  class="operators"  value="+" id="+" onclick="insert(value)">
                 </td>          
         </tr>
         <tr>
                 <td>
-                        <button  >0</button>
+                     <input type="button"  class="operators"  value="(" onclick="insert(value)" >
                 </td> 
                 <td>
-                        <button  >( / )</button>
+                    <input type="button"  class="operators"  value="0"  onclick="insert(value)">
                 </td>                           
                 <td>
-                    <button >.</button>
+                    <input type="button"  class="operators"  value=")" onclick="insert(value)">
                 </td>
                 <td>
-                        <button class="operators">=</button>
+                    <input type="button"  class="operators"  value="=" onclick="equal()">
                 </td>          
         </tr> 
-        </div>       
+           
     </table>
     
      <script src="calci.js"></script>
      </form>
+    </div>
   </body>
 
 </html>
